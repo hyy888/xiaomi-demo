@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* 公共样式 */
+body {
+    font-size: 12px;
+    color: #333333;
+}
+.container {
+    width: 1206px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 顶部代码 */
+.page-top {
+    height: 38px;
+    background-color: #333333;
+}
+.page-top .top-lt {
+    color: #b0b0b0;
+    line-height: 38px;
+}
+.page-top .top-lt a {
+    display: inline-block;
+}
+.page-top .top-lt span {
+    color: #424242;
+    /* 调整间距 */
+    padding: 0 3px;
+}
+/* 最后写hover */
+.page-top .top-lt a:hover {
+    color: #ffffff;
+}
+
+/* 鼠标移动到下载APP弹出二维码 */
+.page-top .top-lt .download {
+    position: relative;
+}
+.page-top .top-lt .down-box {
+    width: 126px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 38px;
+    margin-left: -63px;
+    padding-top: 20px;
+    box-shadow: rgb(170, 170, 170) 0px 1px 5px;
+}
+.page-top .top-lt .down-box img {
+    width: 88px;
+    height: 88px;
+    display: block;
+    margin: 0 auto;
+}
+/* 用b标签插入背景图片三角形 */
+.page-top .top-lt .down-box b {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url(../img/sjx.png);
+    left: 50%;
+    margin-left: -8px;
+    top: -11px;
+}
