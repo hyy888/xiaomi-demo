@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 公共样式 */
 body {
-    font-size: 12px;
+    font-size: 10px;
     color: #333333;
 }
 .container {
@@ -15,10 +15,14 @@ body {
     height: 38px;
     background-color: #333333;
 }
+
+/* 导航栏左边 */
 .page-top .top-lt {
     color: #b0b0b0;
     line-height: 38px;
+    float: left;
 }
+/* 给a标签加上display:inline-block可以将标签内容在盒子内撑满 */
 .page-top .top-lt a {
     display: inline-block;
 }
@@ -45,6 +49,8 @@ body {
     margin-left: -63px;
     padding-top: 20px;
     box-shadow: rgb(170, 170, 170) 0px 1px 5px;
+    text-align: center;
+    display: none;
 }
 .page-top .top-lt .down-box img {
     width: 88px;
@@ -61,4 +67,84 @@ body {
     left: 50%;
     margin-left: -8px;
     top: -11px;
+}
+.page-top .top-lt a.download i {
+    font-style: normal;
+    color: #333333;
+}
+.page-top .top-lt a.download:hover .down-box {
+    display: block;
+}
+.page-top .top-lt a.download:hover i {
+    color: #333333;
+}
+
+/* 导航栏右边 */
+.page-top .top-gt {
+    float: right;
+    /* width: 300px; */
+}
+/* 还有一种方法是大盒子自适应，设定子盒子的padding和margin去撑开盒子 */
+.page-top .top-gt .login {
+    color: #b0b0b0;
+    line-height: 38px;
+    float: right;
+}
+.page-top .top-gt .login span {
+    color: #424242;
+    /* 调整间距 */
+    padding: 0 3px;
+}
+.page-top .top-gt .login a:hover {
+    color: #ffffff;
+}
+.page-top .top-gt .car-box {
+    width: 118px;
+    height: 38px;
+    background-color: #424242;
+    margin-left: 15px;
+    float: right;
+}
+/* 登录后用户中心下拉菜单 */
+.page-top .userinfo {
+    float: right;
+}
+.page-top .userinfo .user {
+    width: 120px;
+    display: inline-block;
+    position: relative;
+}
+.page-top .userinfo .user .tit {
+    line-height: 38px;
+    text-align: center;
+    display: block;
+}
+.page-top .userinfo .user ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    width: 120px;
+    padding: 10px 0;
+    box-shadow: rgb(0, 0, 0.15) 0px 2px 10px;
+}
+.page-top .userinfo .user li {
+    line-height: 30px;
+    text-align: center;
+}
+.page-top .userinfo .user li a {
+    display: block;
+}
+/* .page-top .userinfo .user li:hover {
+    background-color: #f5f5f5;
+} */
+.page-top .userinfo .user:hover ul {
+    display: block;
+}
+.page-top .userinfo .user a:hover {
+    background-color: #f5f5f5;
+    color: #ff6700;
+}
+.page-top .userinfo .user:hover {
+    background-color: #fff;
 }
