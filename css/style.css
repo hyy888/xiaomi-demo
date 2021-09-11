@@ -89,6 +89,7 @@ body {
     color: #b0b0b0;
     line-height: 38px;
     float: right;
+    margin-right: 20px;
 }
 .page-top .top-gt .login span {
     color: #424242;
@@ -98,19 +99,144 @@ body {
 .page-top .top-gt .login a:hover {
     color: #ffffff;
 }
+
+/* 购物车样式 */
 .page-top .top-gt .car-box {
+    float: right;
+    position: relative;
+}
+.page-top .top-gt .car-box .tit {
+    display: block;
+    z-index: 5;
+    text-align: center;
     width: 118px;
     height: 38px;
+    line-height: 38px;
     background-color: #424242;
-    margin-left: 15px;
-    float: right;
 }
-/* 登录后用户中心下拉菜单 */
+.page-top .top-gt .car-box .pop {
+    display: none;
+    width: 316px;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    box-shadow: 0 2px 10px rgba(0, 0,0, 0.15);
+}
+.page-top .top-gt .car-box .pop .no-good {
+    text-align: center;
+    font-size: 13px;
+    padding: 40px 0;
+}
+.page-top .top-gt .car-box:hover .tit {
+    background-color: #fff;
+    color: #ff6700;
+}
+.page-top .top-gt .car-box:hover .pop {
+    display: block;
+}
+
+/* 购物车商品样式 */
+.page-top .pop .list {
+    padding: 0 20px;
+    margin-top: 15px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+.page-top .pop .list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #c0c0c0;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+/* last-child有兼容性问题，可以指定最后的li加入一个class，给最后一个class设置样式 */
+.page-top .pop .list li:last-child {
+    border: none;
+}
+.page-top .pop .list .pic {
+    float: left;
+}
+.page-top .pop .list img {
+    width: 70px;
+    height: 70px;
+}
+.page-top .pop .list .text {
+    float: left;
+    width: 120px;
+    line-height: 70px;
+    /* 溢出隐藏，溢出部分显示省略号 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.page-top .pop .list .text:hover {
+    color: #ff6700;
+}
+.page-top .pop .list .num {
+    float: right;
+    text-align: right;
+}
+.page-top .pop .list .num h4 {
+    margin-top: 12px;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.page-top .pop .list .num i {
+    font-style: normal;
+    cursor: pointer;
+    color: #aaa;
+}
+.page-top .pop .list .num i:hover {
+    color: #333;
+}
+.page-top .pop .total {
+    background-color: #fafafa;
+    padding: 15px 10px;
+    /* 浮动元素没有高度，所以这里要加overflow: hidden */
+    overflow: hidden;
+}
+.page-top .pop .total .price {
+    float: left;
+}
+.page-top .pop .total .price p {
+    color: #777;
+}
+.page-top .pop .total .price h3 {
+    font-size: 18px;
+    color: #ff6700;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.page-top .pop .total .btn {
+    width: 132px;
+    height: 40px;
+    background-color: #ff6700;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    display: block;
+}
+
+/* 登录后的样式 */
 .page-top .userinfo {
     float: right;
+    margin-right: 20px;
 }
+.page-top .userinfo .link {
+    line-height: 38px;
+    color: #b0b0b0;
+}
+.page-top .userinfo span {
+    color: #424242;
+    /* 调整间距 */
+    padding: 0 3px;
+}
+
+/* 登录后用户中心下拉菜单 */
 .page-top .userinfo .user {
     width: 120px;
+    height: 38px;
     display: inline-block;
     position: relative;
 }
@@ -118,6 +244,9 @@ body {
     line-height: 38px;
     text-align: center;
     display: block;
+    color: #b0b0b0;
+    position: relative;
+    z-index: 5;
 }
 .page-top .userinfo .user ul {
     display: none;
@@ -126,7 +255,7 @@ body {
     top: 38px;
     width: 120px;
     padding: 10px 0;
-    box-shadow: rgb(0, 0, 0.15) 0px 2px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0,0, 0.15);
 }
 .page-top .userinfo .user li {
     line-height: 30px;
@@ -138,13 +267,13 @@ body {
 /* .page-top .userinfo .user li:hover {
     background-color: #f5f5f5;
 } */
-.page-top .userinfo .user:hover ul {
-    display: block;
-}
 .page-top .userinfo .user a:hover {
     background-color: #f5f5f5;
     color: #ff6700;
 }
 .page-top .userinfo .user:hover {
     background-color: #fff;
+}
+.page-top .userinfo .user:hover ul {
+    display: block;
 }
