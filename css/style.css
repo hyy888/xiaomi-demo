@@ -39,6 +39,8 @@ body {
 /* 鼠标移动到下载APP弹出二维码 */
 .page-top .top-lt .download {
     position: relative;
+    /* 新增加代码，为了提升购物车权重不被下面的导航栏覆盖内容 */
+    z-index: 100;
 }
 .page-top .top-lt .down-box {
     width: 126px;
@@ -104,6 +106,8 @@ body {
 .page-top .top-gt .car-box {
     float: right;
     position: relative;
+    /* 新增加代码，为了提升购物车权重不被下面的导航栏覆盖内容 */
+    z-index: 100;
 }
 .page-top .top-gt .car-box .tit {
     display: block;
@@ -120,6 +124,8 @@ body {
     position: absolute;
     top: 38px;
     right: 0;
+    /* 新增加代码，为了不让下面的导航栏内容透过购物车栏 */
+    background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0,0, 0.15);
 }
 .page-top .top-gt .car-box .pop .no-good {
@@ -376,7 +382,38 @@ body {
     display: block;
 }
 
-
-/* #page-all-nav {
-    visibility: hidden;
-} */
+/* 全部商品分类下拉菜单样式 */
+#page-all-nav {
+    /* visibility: hidden; */
+    position: relative;
+}
+.slider-nav {
+    position: absolute;
+    width: 232px;
+    height: 418px;
+    border: 1px solid #ff6700;
+    background-color: #fff;
+    right: -15px;
+    top: 72px;
+    padding: 20px 0;
+}
+.slider-nav .slider-li {
+    line-height: 42px;
+    padding: 0 24px 0 30px;
+}
+.slider-nav .slider-li .name {
+    font-size: 13px;
+    color: #424242;
+}
+.slider-nav .slider-li .name span {
+    margin-right: 5px;
+}
+.slider-nav .slider-li i{
+    float: right;
+}
+.slider-nav .slider-li:hover {
+    background-color: #ff6700;
+}
+.slider-nav .slider-li:hover .name {
+    color: red;
+}
