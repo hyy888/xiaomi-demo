@@ -289,7 +289,6 @@ body {
 .page-nav {
     height: 96px;
     position: relative;
-    background-color: #eee;
 }
 .page-nav .logo {
     display: block;
@@ -384,7 +383,7 @@ body {
 
 /* 全部商品分类下拉菜单样式 */
 #page-all-nav {
-    /* visibility: hidden; */
+    visibility: hidden;
     position: relative;
 }
 .slider-nav {
@@ -399,21 +398,56 @@ body {
 }
 .slider-nav .slider-li {
     line-height: 42px;
-    padding: 0 24px 0 30px;
 }
 .slider-nav .slider-li .name {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
     color: #424242;
+    padding: 0 24px 0 30px;
 }
 .slider-nav .slider-li .name span {
     margin-right: 5px;
 }
 .slider-nav .slider-li i{
     float: right;
+    margin-right: 18px;
 }
 .slider-nav .slider-li:hover {
     background-color: #ff6700;
 }
 .slider-nav .slider-li:hover .name {
-    color: red;
+    color: #fff;
+}
+.slider-nav .slider-pop {
+    position: absolute;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    width: 990px;
+    height: 458px;
+    left: 234px;
+    top: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    display: none;
+}
+.slider-nav .pop-li {
+    float: left;
+    width: 223px;
+    height: 56px;
+    padding-left: 24px;
+    padding-top: 20px;
+    /* margin-bottom: 10px; */
+    overflow: hidden;
+    color: #333333;
+}
+.slider-nav .pop-li img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 16px;
+}
+.slider-nav .pop-li:hover p {
+    color: #ff6700;
+}
+.slider-nav .slider-li:hover .slider-pop {
+    display: block;
 }
