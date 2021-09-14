@@ -304,7 +304,7 @@ body {
     float: left;
     margin-top: 24px;
     padding: 12px 2px 0 20px;
-    height: 62px;
+    height: 60px;
 }
 .page-nav .nav .nav-item .tit {
     font-size: 16px;
@@ -324,6 +324,7 @@ body {
     background-color: #fff;
     box-shadow: 0 3px 4px rgba(0, 0,0, 0.18);
     display: none;
+    z-index: 100;
 }
 /* .page-nav .down-ul {
     overflow: hidden;
@@ -390,9 +391,10 @@ body {
     height: 418px;
     border: 1px solid #ff6700;
     background-color: #fff;
-    right: -19px;
+    right: -62px;
     top: 72px;
     padding: 20px 0;
+    z-index: 100;
 }
 .slider-nav .slider-li {
     line-height: 42px;
@@ -420,8 +422,9 @@ body {
     position: absolute;
     border: 1px solid #e0e0e0;
     border-left: none;
-    width: 990px;
+    width: 973px;
     height: 458px;
+    background-color: #fff;
     left: 234px;
     top: 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
@@ -429,7 +432,7 @@ body {
 }
 .slider-nav .pop-li {
     float: left;
-    width: 223px;
+    width: 215px;
     height: 56px;
     padding-left: 24px;
     padding-top: 20px;
@@ -529,4 +532,54 @@ body {
     float: right;
     font-style: normal;
     color: #b0b0b0;
+}
+
+/* 首页轮播 */
+.idx-banner {
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+}
+.idx-banner ul {
+    width: 6000px;
+}
+.idx-banner li {
+width: 1206px;
+height: 460px;
+position: relative;
+float: left;
+}
+.idx-banner li img {
+    width: 1206px;
+    height: 460px;
+}
+.idx-banner li a {
+    /* position: absolute; */
+    width: 973px;
+    height: 460px;
+    background-color: rgba(0,0,0,0.3);
+   top: 0;
+   right: 0;
+}
+.idx-banner .btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;
+    width: 40px;
+    height: 70px;
+    background-image: url(../img/icon-slides.png);
+}
+.idx-banner .btn.prev {
+    background-position: -83px 0;
+    left: 234px;
+}
+.idx-banner .btn .prev {
+    background-position: top right;
+    right: 0;
+}
+.idx-banner .page {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
