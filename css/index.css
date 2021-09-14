@@ -11,3 +11,29 @@
 #page-all-nav .slider-nav {
     visibility: visible;
 }
+
+/* 菜单区域和广告位 */
+.idx-menu-adv {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.idx-menu-adv .menu {
+    width: 212px;
+    height: 145px;
+    background-color: #5f5750;
+    float: left;
+    padding: 10px;
+}
+.idx-menu-adv .pic {
+    display: block;
+    width: 304px;
+    height: 165px;
+    margin-left: 20px;
+    float: left;
+}
+.idx-menu-adv .pic img {
+    display: block;
+    width: 304px;
+    height: 165px;
+}
