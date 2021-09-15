@@ -88,6 +88,7 @@ body {
 }
 
 /* 大内容区 */
+/* 内容区不用visibility: hidden;而只用盒子高度撑开是因为如果用了hidden，hover的最右侧阴影就会被隐藏 */
 .idx-container {
     margin-top: 40px;
     padding-top: 33px;
@@ -118,4 +119,98 @@ body {
 }
 .idx-title .see-all:hover {
     color: #ff6700;
+}
+.idx-container .col-5 {
+    width: 229px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+.idx-container .col-5:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.idx-container .idx-box {
+    height: 615px;
+    clear: both;
+}
+.idx-box .adv-box {
+    float: left;
+}
+/* 左边 */
+.idx-box .adv-box.col-5 {
+    margin-left: 0;
+}
+.idx-box .adv-box .single img {
+    width: 229px;
+    display: block;
+    height: 615px;
+}
+/* 右边 */
+.idx-box .good-box {
+    float: right;
+    width: 976px;
+}
+.idx-box .good-item {
+    background-color: #fff;
+    height: 260px;
+    padding: 20px 0;
+    position: relative;
+
+}
+.idx-box .good-item .pic img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+    /* position: absolute;
+    left: 50%;
+    margin-left: -80px; */
+}
+.idx-box .good-item .tags {
+    width: 64px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}
+.idx-box .good-item .tags.new {
+    background-color: #83c44c;
+}
+.idx-box .good-item .tags.discount {
+    background-color: #e53935;
+}
+.idx-box .good-item .name,
+.idx-box .good-item .desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+}
+.idx-box .good-item .name {
+    width: 200px;
+    margin: 0 auto 10px;
+}
+.idx-box .good-item .desc {
+    width: 210px;
+    color: #b0b0b0;
+    margin: 0 auto;
+}
+.idx-box .good-item .price {
+    margin-top: 18px;
+    text-align: center;
+}
+.idx-box .good-item .price span {
+    color: #ff6700;
+}
+.idx-box .good-item .price i {
+    font-style: normal;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #b0b0b0;
 }
