@@ -25,6 +25,45 @@
     float: left;
     padding: 10px;
 }
+.idx-menu-adv .menu li {
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+    color: #cfccca;
+    position: relative;
+}
+.idx-menu-adv .menu li i {
+    font-size: 20px;
+}
+.idx-menu-adv .menu li span {
+    display: block;
+    margin-top: 10px;
+}
+.idx-menu-adv .menu li.bb::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #665e57;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.idx-menu-adv .menu li.br::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #665e57;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.idx-menu-adv .menu li:hover a {
+    color: #fff;
+}
 .idx-menu-adv .pic {
     display: block;
     width: 304px;

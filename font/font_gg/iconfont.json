@@ -1,0 +1,51 @@
+{
+  "id": "2805204",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10436",
+      "name": "F",
+      "font_class": "F",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12437193",
+      "name": "汇率",
+      "font_class": "huishuai",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "15112771",
+      "name": "话费",
+      "font_class": "huafei",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "16555067",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "18169796",
+      "name": "SIM卡,手机卡,电话卡",
+      "font_class": "sim",
+      "unicode": "e946",
+      "unicode_decimal": 59718
+    },
+    {
+      "icon_id": "23946580",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "ec20",
+      "unicode_decimal": 60448
+    }
+  ]
+}
