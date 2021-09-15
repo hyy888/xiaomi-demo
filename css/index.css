@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+    min-height: 6000px;
+}
 .slider-nav {
     width: 234px;
     height: 420px;
@@ -75,4 +78,44 @@
     display: block;
     width: 304px;
     height: 165px;
+}
+
+/* 广告图 */
+
+.idx-adv img {
+    width: 100%;
+    display: block;
+}
+
+/* 大内容区 */
+.idx-container {
+    margin-top: 40px;
+    padding-top: 33px;
+    background-color: #f5f5f5;
+    /* overflow: hidden; */
+}
+.idx-title {
+    margin-top: 20px;
+}
+/* 一个容器的第一个子元素的margin-top会转移给父元素的margin-top */
+/* 解决办法： */
+/* 1.父元素加overflow：hidden */
+/* 2.第一个子元素的margint-top变成父元素的padding-top */
+/* 3.父元素加border */
+.idx-title .tit {
+    font-size: 22px;
+    line-height: 60px;
+    color: #666;
+    cursor:pointer;
+}
+.idx-title .see-all {
+    float: right;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    top: 25px;
+    cursor:pointer;
+}
+.idx-title .see-all:hover {
+    color: #ff6700;
 }
