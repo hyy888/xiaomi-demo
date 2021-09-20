@@ -172,6 +172,15 @@ body {
     height: 615px;
     display: block;
 }
+.idx-box .adv-box .dobule {
+    display: block;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.idx-box .adv-box .dobule img {
+    height: 300px;
+    width: 100%;
+}
 /* 右边 */
 .idx-box .good-box {
     float: right;
@@ -241,8 +250,87 @@ body {
     margin-left: 5px;
     color: #b0b0b0;
 }
+
+/* 更多 */
+.idx-box .last-more:hover {
+    box-shadow: none;
+}
+.idx-box .last-more {
+    background-color: #f5f5f5;
+    background-color: transparent;
+    margin-top: -18px;
+}
+.idx-box .last-more .good-top,
+.idx-box .last-more .good-more {
+    background-color: #fff;
+    height: 142px;
+    margin-bottom: 15px;
+}
+.idx-box .last-more .sm-img {
+    margin-bottom: 15px;
+}
+.idx-box .last-more .sm-img {
+    height: 80px;
+    width: 80px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 25px;
+}
+.idx-box .last-more .sm-img img {
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+.idx-box .last-more .txt {
+    margin-left: 30px;
+    /* overflow:hidden  解决外边距塌陷 */
+    overflow: hidden;
+}
+.idx-box .last-more .txt h3 {
+    font-weight: normal;
+}
+.idx-box .last-more .good-top .txt {
+    float: left;
+    margin-top: 40px;
+}
+.idx-box .last-more .good-top h3 {
+    width: 94px;
+}
+.idx-box .last-more .good-top h3 a {
+    color: #000;
+    font-size: 14px;
+}
+.idx-box .last-more .good-top p {
+    line-height: 30px;
+    color: #ff6700;
+    font-size: 14px;
+}
+.idx-box .last-more .good-more {
+    position: relative;
+}
+.idx-box .last-more .good-more h3 {
+    font-size: 18px;
+    margin-top: 40px;
+}
+.idx-box .last-more .good-more h3 a {
+    color: #333;
+}
+.idx-box .last-more .good-more p a {
+    line-height: 30px;
+    color: #333;
+}
+.idx-box .last-more .good-more i {
+    font-size: 70px;
+    color: #ff6700;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
 .idx-box .good-item:hover,
 .idx-box .adv-box .single:hover,
-.idx-box .adv-box .dobule:hover {
+.idx-box .adv-box .dobule:hover,
+.idx-box .last-more .good-top:hover,
+.idx-box .last-more .good-more:hover {
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
