@@ -95,6 +95,12 @@ body {
     background-color: #f5f5f5;
     /* overflow: hidden; */
 }
+/* .idx-container .idx-adv {
+    margin-top: 40px;
+} */
+.idx-container .idx-phone {
+ margin-bottom: 40px;
+}
 .idx-title {
     margin-top: 20px;
 }
@@ -120,14 +126,32 @@ body {
 .idx-title .see-all:hover {
     color: #ff6700;
 }
+.idx-title .list {
+    width: 400px;
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 20px;
+}
+.idx-title .list li {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 26px;
+}
+.idx-title .list li a {
+    color: #666;
+    padding-bottom: 3px;
+}
+.idx-title .list li .active,
+.idx-title .list li:hover a {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
 .idx-container .col-5 {
     width: 229px;
     margin-left: 15px;
     margin-bottom: 15px;
     float: left;
-}
-.idx-container .col-5:hover {
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 .idx-container .idx-box {
     height: 615px;
@@ -140,10 +164,13 @@ body {
 .idx-box .adv-box.col-5 {
     margin-left: 0;
 }
+.idx-box .adv-box .single {
+    display: block;
+}
 .idx-box .adv-box .single img {
     width: 229px;
-    display: block;
     height: 615px;
+    display: block;
 }
 /* 右边 */
 .idx-box .good-box {
@@ -213,4 +240,9 @@ body {
     text-decoration: line-through;
     margin-left: 5px;
     color: #b0b0b0;
+}
+.idx-box .good-item:hover,
+.idx-box .adv-box .single:hover,
+.idx-box .adv-box .dobule:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
