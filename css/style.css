@@ -612,3 +612,192 @@ float: left;
 .idx-banner .page span {
     visibility: hidden;
 }
+
+/* 页脚 */
+.page-foot .ts {
+    overflow: hidden;
+    margin: 30px auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+.page-foot .ts li {
+    width: 240px;
+    border-right: 1px solid #e0e0e0;
+    line-height: 25px;
+    float: left;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.page-foot .ts li:last-child {
+    border-right: none;
+}
+.page-foot .ts li a {
+    color: #616161;
+
+}
+.page-foot .ts li i {
+    font-size: 24px;
+    margin-right: 5px;
+    color: #616161;
+    position: relative;
+    top: 3px;
+}
+.page-foot .ts li a:hover i,
+.page-foot .ts li a:hover{
+    color: #ff6700;
+}
+.page-foot .nav {
+    /* border-top: 1px solid #b0b0b0; */
+    height: 170px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+
+}
+.page-foot .nav .lt {
+    float: left;
+    width: 964px;
+    overflow: hidden;
+}
+.page-foot .nav .lt dl {
+    width: 160px;
+    float: left;
+}
+.page-foot .nav .lt dt {
+    font-size: 14px;
+    color: #424242;
+    margin-bottom: 26px;
+}
+.page-foot .nav .lt dd {
+    margin-top: 10px;
+}
+.page-foot .nav .lt dd a {
+    color: #757575;
+    font-size: 12px;
+}
+.page-foot .nav .lt dd a:hover {
+    color: #ff6700;
+}
+.page-foot .nav .gt {
+    width: 240px;
+    height: 110px;
+    float: right;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+.page-foot .nav .gt h3 {
+    font-weight: normal;
+    font-size: 22px;
+    color: #ff6700;
+    margin-bottom: 5px;
+}
+.page-foot .nav .gt p {
+    color: #616161;
+    margin-bottom: 5px;
+}
+.page-foot .nav .gt .concat {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.page-foot .nav .gt .concat i {
+    margin-right: 5px;
+    font-size: 12px;
+}
+.page-foot .nav .gt .concat:hover {
+    color: #fff;
+    background-color: #ff6700;
+}
+.page-foot .nav .gt .gz {
+    position: relative;
+}
+.page-foot .nav .gt .gz span {
+ position: relative;
+ top: -5px;
+ font-size: 12px;
+}
+.page-foot .nav .gt .gz i {
+    font-size: 23px;
+    margin-right: 5px;
+    color: #474747;
+    z-index: 100;
+}
+.page-foot .nav .gt .gz .wx-img {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    display: none;
+}
+.page-foot .nav .gt .gz img {
+    width: 126px;
+    height: 126px;
+}
+.page-foot .nav .gt .gz .gz-wb:hover i,
+.page-foot .nav .gt .gz .gz-wx:hover i {
+    color: #ff6700;
+}
+.page-foot .nav .gt .gz .gz-wx:hover .wx-img {
+    display: block;
+}
+.page-foot .bot {
+    height: 230px;
+    width: 100%;
+    padding-top: 30px;
+    /* overflow: hidden; */
+    background: url(../img/xiaomihkj.png)center 210px no-repeat;
+    background-color: #f5f5f5;
+}
+.page-foot .bot .logo {
+    display: block;
+    float: left;
+    width: 54px;
+    height: 54px;
+    background: #f5f5f5 url(../img/logo-mi2.png) center center no-repeat;
+    background-size: contain;
+}
+.page-foot .bot .txt {
+    width: 1142px;
+    float: right;
+}
+.page-foot .bot .txt .list {
+    font-weight: normal;
+}
+.page-foot .bot .txt .list a {
+    color: #757575;
+    font-size: 12px;
+    line-height: 18px;
+}
+.page-foot .bot .txt .list a:hover {
+    color: #ff6700;
+}
+.page-foot .bot .txt .list span {
+    padding: 0 2px;
+    color: #b0b0b0;
+}
+.page-foot .bot .txt .list-txt {
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 18px;
+}
+.page-foot .bot .txt .list-txt a:hover {
+    color: #ff6700;
+}
+.page-foot .bot .txt ul {
+    overflow: hidden;
+    margin-top: 8px;
+}
+.page-foot .bot .txt li img,
+.page-foot .bot .txt li {
+    width: 84px;
+    height: 28px;
+    display: block;
+}
+.page-foot .bot .txt li {
+    float: left;
+    margin-right: 10px;
+}
