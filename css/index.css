@@ -410,3 +410,189 @@
 .video .item h3 a:hover  {
     color: #ff6700;
 }
+/* 视频弹框效果 */
+/* 用图片平铺兼容性最好 */
+.idx-video-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+.idx-video-box {
+    width: 880px;
+    height: 596px;
+    position: fixed;
+    left: 50%;
+    /* top: 50%; */
+    top: -1000px;
+    display: none;
+    margin-top: -298px;
+    margin-left: -440px;
+    background-color: #000;
+    z-index: 110;
+    box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+}
+.idx-video-box .tit {
+    height: 60px;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+}
+.idx-video-box .tit span {
+    font-size: 18px;
+    line-height: 60px;
+    color: #424242;
+}
+.idx-video-box .tit .close {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/video/close.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    display: block;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.idx-video-box .tit .close:hover {
+    background-color: #e53935;
+    background-image: url(../img/video/close2.png);
+}
+.idx-video-box .video-box {
+    position: relative;
+}
+.idx-video-box .video-box .pic,
+.idx-video-box .video-box video,
+.idx-video-box .video-box img {
+    height: 536px;
+    width: 880px;
+}
+.idx-video-box .video-box .pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.idx-video-box .play-btn {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    z-index: 111;
+    background-image: url(../img/video/icon-video3.png);
+    cursor: pointer;
+}
+.idx-video-box .controller {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 110;
+}
+.idx-video-box .bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #5c5c5c;
+    background-color: rgba(92,92,92,0.6);
+}
+.idx-video-box .bar a {
+    width: 50%;
+    height: 4px;
+    background-color: #ff6700;
+    display: block;
+    position: relative;
+}
+.idx-video-box .bar span {
+    background-color: #fff;
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+.idx-video-box .cont-box {
+    padding: 0 20px;
+}
+.idx-video-box .cont-box .play-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/video/icon-video1.png);
+    margin-top: 14px;
+    cursor: pointer;
+}
+.idx-video-box .cont-box .play-icon:hover {
+    background-image: url(../img/video/icon-video2.png);
+}
+.idx-video-box .cont-box .normal {
+    margin-left: 10px;
+    float: left;
+}
+.idx-video-box .cont-box .play-icon.play {
+    background-position: 0 -20px;
+}
+.idx-video-box .cont-box .play-icon.pause {
+    background-position: 0 0;
+}
+.idx-video-box .cont-box .play-times {
+    float: left;
+    margin-left: 30px;
+    line-height: 46px;
+    color: #fff;
+}
+.idx-video-box .cont-box .icon-full {
+    float: right;
+    background-position: left -100px;
+}
+.idx-video-box .cont-box .vol {
+    float: right;
+    width: 130px;
+    height: 46px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.idx-video-box .cont-box .icon-vol {
+    float: left;
+    background-position: left -40px;
+    margin-right: 10px;
+}
+.idx-video-box .cont-box .vol-bar {
+    float:left;
+    width: 100px;
+    height: 4px;
+    background-color: #c2c2c2;
+    border-radius: 2px;
+    margin-top: 23px;
+}
+.idx-video-box .cont-box .vol-bar a {
+    width: 50%;
+    background-color: #ff6700;
+    border-radius: 2px;
+    height: 4px;
+    display: block;
+    position: relative;
+}
+.idx-video-box .cont-box .vol-bar span {
+    background-color: #fff;
+    border-radius: 6px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    cursor: pointer;
+}
+
+
+

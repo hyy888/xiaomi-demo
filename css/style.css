@@ -801,3 +801,117 @@ float: left;
     float: left;
     margin-right: 10px;
 }
+
+/* 侧边栏 */
+.page-slider {
+    position: fixed;
+    right: 0;
+    width: 88px;
+    bottom: 70px;
+}
+.page-slider li {
+    height: 90px;
+    width: 82px;
+    border-bottom: 1px solid #f5f5f5;
+    border-left: 1px solid #f5f5f5;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #fff;
+    position: relative;
+
+}
+.page-slider li .pop {
+    padding: 14px;
+    width:102px;
+    height: 168px;
+    position: absolute;
+    right: 95px;
+    top: 0;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+    display: none;
+
+}
+.page-slider li .pop b {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-image: url(../img/sjx2.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    right: -18px;
+    top: 20%; 
+}
+.page-slider li:hover .pop {
+    display: block;
+}
+.page-slider li .pop img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 6px auto;
+}
+.page-slider li .pop p {
+    display: block;
+    width: 82px;
+    font-size: 14px;
+    color: #757575;
+    margin: 14px auto 0;
+}
+.page-slider li i.my-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin: 16px auto 0;
+}
+.page-slider li i.icon-app {
+    background-image: url(../img/img-cbl/shouji1.png);
+}
+.page-slider li i.icon-user {
+    background-image: url(../img/img-cbl/geren1.png);
+}
+.page-slider li i.icon-shouhou {
+    background-image: url(../img/img-cbl/souhou1.png);
+}
+.page-slider li i.icon-concat {
+    background-image: url(../img/img-cbl/rengong1.png);
+}
+.page-slider li i.icon-car {
+    background-image: url(../img/img-cbl/gouwuche1.png);
+}
+.page-slider li i.icon-top {
+    background-image: url(../img/img-cbl/dingbu1.png);
+}
+
+.page-slider li:hover i.icon-app {
+    background-image: url(../img/img-cbl/shouji2.png);
+}
+.page-slider li:hover i.icon-user{
+    background-image: url(../img/img-cbl/geren2.png);
+}
+.page-slider li:hover i.icon-shouhou {
+    background-image: url(../img/img-cbl/souhou2.png);
+}
+.page-slider li:hover i.icon-concat {
+    background-image: url(../img/img-cbl/rengong2.png);
+}
+.page-slider li:hover i.icon-car {
+    background-image: url(../img/img-cbl/gouwuche2.png);
+}
+.page-slider li:hover i.icon-top{
+background-image: url(../img/img-cbl/dingbu2.png);
+}
+.page-slider li span {
+    display: block;
+    text-align: center;
+    color: #757575;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.page-slider li.last {
+    margin-top: 16px;
+}
+.page-slider li:hover span {
+    color: #ff6700;
+}
