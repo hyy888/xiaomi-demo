@@ -20,6 +20,8 @@ body {
 .page-top .top-lt {
     color: #b0b0b0;
     line-height: 38px;
+    /* i6-i10兼容 */
+    line-height: 37px\9;
     float: left;
 }
 /* 给a标签加上display:inline-block可以将标签内容在盒子内撑满 */
@@ -432,7 +434,7 @@ body {
 }
 .slider-nav .pop-li {
     float: left;
-    width: 215px;
+    width: 219px;
     height: 56px;
     padding-left: 24px;
     padding-top: 20px;
@@ -495,6 +497,8 @@ body {
     border: 1px solid #e0e0e0;
     float: left;
     cursor: pointer;
+    outline: none;
+    /* 对兼容最保险的方法是改图片大小进行替换，并且不能简写background */
     background: #fff url(../img/search-off.png) center center no-repeat;
     background-size: 16px 16px;
 }
